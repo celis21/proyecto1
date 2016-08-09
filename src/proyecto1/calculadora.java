@@ -142,10 +142,19 @@ public class calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_raiz_cuadradaActionPerformed
 
     private void factorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_factorialActionPerformed
-        double a,c;
-        a = Double.valueOf(vala.getText());
-        c = calcular_factorial(a);
-        resultado1.setText(String.valueOf(c));
+       
+        String Campo1;
+        int numero;
+        Campo1 = vala.getText();
+        numero = Integer.parseInt(Campo1);
+        int cont = 1;
+    for (int i = 1; i <= numero; i++){
+    cont = cont * i;
+    }
+    {
+            Object calcular = cont;
+    resultado1.setText(String.valueOf(calcular));
+    }
     }//GEN-LAST:event_factorialActionPerformed
 
     private void pitagorasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pitagorasActionPerformed
